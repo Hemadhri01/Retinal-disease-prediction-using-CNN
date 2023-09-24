@@ -1,0 +1,29 @@
+\\train a model
+from keras.preprocessing import image
+from sklearn.preprocessing import LabelEncoder
+import cv2
+from sklearn.model_selection import train_test_split
+from sklearn.utils import shuffle
+import tensorflow as tf
+from keras.models import Sequential
+from keras.layers import Dense,Dropout,Flatten
+from keras.layers import Conv2D,MaxPool2D
+from keras.layers import Input, Dense
+from keras.utils import to_categorical
+from keras.models import Model
+from keras.preprocessing.image import ImageDataGenerator
+from sklearn.metrics import confusion_matrix
+import matplotlib.pyplot as plt
+
+from keras.applications.vgg16 import VGG16, preprocess_input
+import pandas as pd
+import numpy as np
+import os
+from numpy import argmax
+\\to predict a model
+from keras.models import load_model
+from keras.utils import load_img,img_to_array
+\\to display output in desktop application
+import tkinter as tk
+from tkinter import filedialog
+from predict import *
